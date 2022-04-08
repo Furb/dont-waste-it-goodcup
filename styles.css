@@ -40,6 +40,8 @@ p {
   font-family: sans-serif;
 }
 
+
+
 a {
   text-decoration: none;
   color: var(--orange);
@@ -98,6 +100,12 @@ button {
 
 }
 
+li::marker {
+  color: var(--orange);
+  font-size: 2rem;
+
+}
+
 /* Top Hero */
 
 #heroTop {
@@ -135,6 +143,19 @@ button {
   margin: 8rem auto 0;
 
 } 
+
+
+
+
+/* lists */
+
+li {
+ 
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
 
 /* Pris */
 
