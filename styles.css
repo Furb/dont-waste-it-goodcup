@@ -12,15 +12,20 @@ body {
 }
 
 section {
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 10vh;
   
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h2 {
   font-size: clamp(2rem, 1rem + 4vw, 4.5rem); 
   margin-bottom: 2rem;
   line-height: 1.2;
-  max-width: 22.5rem;
+  max-width: 39rem;
 }
 
 h3 {
@@ -89,9 +94,11 @@ button {
   text-align: center;
 }
 
-.hide-on-big {
-  display: none;
+
+.hide-on-small {
+  display: none !important;
 }
+
 
 .big-arrow {
  
@@ -145,6 +152,11 @@ li::marker {
 } 
 
 
+#goodpoints {
+  max-width: 40rem;
+}
+
+
 
 
 /* lists */
@@ -180,7 +192,7 @@ v
 }
 
 .price-boxes {
- 
+  gap: 0;
   padding-bottom: 4.5rem;
 }
 
@@ -194,7 +206,7 @@ v
   background: #fff;
   border-radius: 25px;
   padding: 4.5rem 2.5rem;
- margin: 2rem 1.5rem;
+ margin: 2rem 1rem;
   max-width: 25rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -231,7 +243,7 @@ p.price span {
 }
 
 .tilkoeb {
-  max-width: 48rem;
+  max-width: 25rem;
 }
 
 /* kontaktt */
@@ -252,7 +264,8 @@ textarea:focus {
 }
 
 form {
-  max-width: 50rem;
+  width: 100%;
+  max-width: 30rem;
 }
 
 .topForm {
@@ -282,6 +295,39 @@ form {
 }
 
 #kontakt textarea {
+  width: 100%;
   max-width: 100%;
   display: block;
+}
+
+
+@media (min-width: 45rem) {
+  .columns {
+    display: flex;
+   
+  }
+
+  .hide-on-big {
+    display: none;
+  }
+
+  .hide-on-small {
+    display: inline-block !important;
+  }
+  
+
+  .price-box {
+    
+    width: 100%;
+    min-width: 19rem;
+    justify-content: left;
+    
+  }
+
+  #kontakt {
+
+    justify-content: space-between;
+
+  }
+
 }
